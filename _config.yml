@@ -22,7 +22,7 @@ title: Croasan
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A photo diary.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/croasan" # the subpath of your site, e.g. /blog
 url: http://crosan.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: croasan
 github_username:  croasan
