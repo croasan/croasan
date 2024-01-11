@@ -15,7 +15,7 @@ collections:
 email: your-email@example.com
 description: A photo diary.
 baseurl: "/croasan"
-url: "http://croasan.github.io"
+url: http://croasan.github.io
 twitter_username: croasan
 github_username: croasan
 theme: minima
