@@ -1,0 +1,14 @@
+---
+layout: default
+title: Croasan
+---
+
+{% for diary in site.diaries %}
+
+<a href="{{diary.url}}">
+    <h1>{{diary.title}}</h1>
+</a>
+
+    {{diary.content}}
+
+{% endfor %}
