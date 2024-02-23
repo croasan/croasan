@@ -2,8 +2,9 @@
 title: Croasan
 layout: default
 ---
+{% assign sorted = site.diaries | sort: 'date' | reverse  %}
 
-{% for diary in site.diaries %}
+{% for diary in sorted %}
 <div class="row post">
     {{diary.content}}
 </div>
