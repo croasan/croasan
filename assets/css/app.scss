@@ -1,40 +1,114 @@
 ---
 ---
 
-.header_margin{
-    margin-top: 120px;
+@import url('https://fonts.googleapis.com/css?family=Domine:700');
+
+
+$background-color: #F7F0E9;
+$title-color: #F84F38;
+$title-font: Domine;
+$caption-color:#959791;
+
+$yellow: #FFB052;
+$blue: #00D0FA;
+$pink: #F73B5E;
+
+body{
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: $background-color;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.footer_padding{
-    padding-bottom: 100px
+.yellow{
+    color: $yellow;
+}
+.pink{
+    color: $pink;
+}
+.blue{
+    color: $blue;
+}
+
+.posts{
+}
+
+.post{
+    margin-bottom: 128px;
+}
+
+.date{
+    text-align: right;
+    font-size: 16px;
+    font-style: italic;
+    color: $caption-color;
+    margin-top: 16px;
+    text-align: right;
+    padding: 0;
+}
+
+.title_block{
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 16px;
+
+    .categories{
+        font-size: 16px;
+        color: $caption-color;
+        margin-top: 16px;
+        display: inline;
+        vertical-align: bottom;
+        font-style: italic;
+    }
+
+    h1{
+        color: $title-color;
+        text-transform:uppercase;
+        letter-spacing: -2px;
+        font-size: 32px;
+        text-align: right;
+        display: inline;
+        vertical-align: bottom;
+        margin-left: 8px;
+    }
 }
 
 header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 24px;
-    padding: 10px;
     z-index: 2;
+    width: 100%;
+    height: 100%;
+
+    .logo{
+        max-width: 100px;
+        border-radius: 50%;
+        margin-left: auto;
+        display: block;
+    }
 
     nav{
-        margin-right: 30px;
-
+        display: table-cell;
+        vertical-align: top;
         a {
-            margin-left: 0.5vw;
-            font-size: min(calc(10px + 1.8vw), 30px);
+            font-size: 16px;
             text-decoration: none;
             font-weight: 300;
-            &:hover{
-                text-decoration: underline;
-                text-decoration-thickness: 4px;
-                -webkit-text-decoration-style: wavy;
-                text-decoration-style: wavy;
-                text-underline-position: under;
-            }
+            display: list-item;
+            list-style: none;
+            top: 0;
+
         }
+    }
+}
+
+footer{
+    margin-bottom: 128px;
+    h2{
+        text-transform:uppercase;
+        letter-spacing: -2px;
+        font-size: 32px;
     }
 }

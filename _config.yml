@@ -2,10 +2,13 @@
 title: Croasan
 timezone: UTC
 collections:
+collections:
+  tags:
+    output: true
+    permalink: tag/:title/
   diaries:
     title: Diaries
     output: true
-    permalink: "/:collection/:name"
   posts:
     title: Posts
     output: true
@@ -21,3 +24,10 @@ github_username: croasan
 theme: minima
 plugins:
 - jekyll-feed
+defaults:
+  -
+    scope:
+      path: ""
+      type: tags
+    values:
+      layout: tag

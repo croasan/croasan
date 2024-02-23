@@ -4,11 +4,7 @@ layout: default
 ---
 
 {% for diary in site.diaries %}
-
-<a href="{{diary.url}}">
-    <h1>{{diary.title}}</h1>
-</a>
-
+<div class="row post">
     {{diary.content}}
-
+</div>
 {% endfor %}

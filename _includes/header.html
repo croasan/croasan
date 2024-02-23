@@ -1,11 +1,8 @@
 <header>
-    <a href="/">
-        <!-- <img class="logo" id="logo" src="/assets/img/logo_white.png" alt="Laura Sirvent"> -->
-    </a>
+    <img class="logo" id="logo" src="/assets/img/logo.png" alt="Croasan">
     <nav>
-        <a href="/">Home</a>
-        <a href="/work">Work</a>
-        <a href="/about">About</a>
-        <!-- <a href="/playground">Playground</a> -->
+        {% for tag in site.tags %}
+        <h3>{{ tag.name }}</h3>
+        {% endfor %}
     </nav>
 </header>
