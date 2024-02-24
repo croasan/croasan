@@ -1,8 +1,6 @@
 <header>
     <img class="logo" id="logo" src="/assets/img/logo.png" alt="Croasan">
     <nav>
-        {% for tag in site.tags %}
-        <h3>{{ tag.name }}</h3>
-        {% endfor %}
+        {{site.tags}}
     </nav>
 </header>

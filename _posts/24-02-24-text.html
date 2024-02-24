@@ -1,16 +1,12 @@
 ---
-title: A Naples trip in 2022
-date: 2024-01-11 09:17:08 Z
+title: A text post
+date: 2024-02-23
+tags: [animation]
 ---
 <div class="col">
-    <div class="title_block">
-        <!-- <p class="categories">
-            {% for tag in site.tags %}
-                {{ tag[0] }}
-            {% endfor %}
-        </p> -->
-        <h1>{{ page.title }}</h1>
-    </div>
+
+    {% include title_block.html %}
+
     <p class="text-end">It is a long established fact that a reader will be distracted by the readable content of a page
         when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
         letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
@@ -18,8 +14,7 @@ date: 2024-01-11 09:17:08 Z
         'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
         sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 </div>
-<div class="col">
-    <img class="w-100" src="/assets/photos/naples.png">
-</div>
+<div class="col"></div>
 
-<p class="date">{{page.date | date: "%-d %B %Y"}}</p>
+{% include date_block.html %}
+

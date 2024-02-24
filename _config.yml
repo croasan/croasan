@@ -1,20 +1,5 @@
 ---
-title: Croasan
-timezone: UTC
-collections:
-collections:
-  tags:
-    output: true
-    permalink: tag/:title/
-  diaries:
-    title: Diaries
-    output: true
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
+title: Croasanu
 email: your-email@example.com
 description: A photo diary.
 baseurl: "/"
@@ -22,12 +7,3 @@ url: https://croasan.github.io
 twitter_username: croasan
 github_username: croasan
 theme: minima
-plugins:
-- jekyll-feed
-defaults:
-  -
-    scope:
-      path: ""
-      type: tags
-    values:
-      layout: tag

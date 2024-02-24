@@ -1,11 +1,11 @@
 ---
-title: Croasan
 layout: default
 ---
-{% assign sorted = site.diaries | sort: 'date' | reverse  %}
 
-{% for diary in sorted %}
+<!-- {% assign sorted = site.posts | sort: 'date' | reverse  %} -->
+
+{% for post in site.posts %}
 <div class="row post">
-    {{diary.content}}
+    {{post.content}}
 </div>
 {% endfor %}
