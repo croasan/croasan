@@ -12,12 +12,15 @@
     <body>
         <section class="container-fluid p-0">
             <div class="row">
+                {% include top_header.html %}
+            </div>
+            <div class="row">
             <div class="col-10 p-0">
                 <section class="container-fluid p-0 posts">
                     {{ content }}
                 </section>
             </div>
-            <div class="col-2 p-0">
+            <div class="col-2 p-0 header">
                 {% include header.html %}
             </div>
         </div>

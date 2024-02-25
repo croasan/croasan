@@ -1,10 +1,10 @@
-<header>
+<div class="top-header">
     <img class="logo" id="logo" src="/assets/img/logo.png" alt="Croasan">
     <div class="tags">
     <ul class="">
         {% for tag in site.tags %}
         {% capture tag_name %}{{ tag | first }}{% endcapture %}
-        <li class="">
+        <a href="" class="tag"><li class="">
             <!-- <p class="count">{{ site.tags[tag_name].size }}</p> -->
             <a href="" class="tag">{{ tag_name }}</a>
             <p class="count">/ {{ site.tags[tag_name].size }}</p>
@@ -12,4 +12,4 @@
         {% endfor %}
     </ul>
     </div>
-</header>
+</div>
