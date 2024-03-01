@@ -1,5 +1,5 @@
 ---
-title: Croasanu
+title: Croasan
 email: your-email@example.com
 description: A photo diary.
 baseurl: "/"
@@ -7,3 +7,17 @@ url: https://croasan.github.io
 twitter_username: croasan
 github_username: croasan
 theme: minima
+plugins:
+  - jekyll-paginate-v2
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+permalink: /:year/:month/:title.html

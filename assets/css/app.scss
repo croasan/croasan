@@ -81,7 +81,7 @@ header{
     ul{
         list-style: none;
         margin-top: 16px;
-        padding-left: 0px;
+        padding-left: 16px;
         text-align: left;
     }
 
@@ -97,12 +97,17 @@ header{
         font-size: 16px;
     }
 
-    a {
+    a.tag {
         float: left;
         color: black;
         font-size: 16px;
         text-decoration: underline;
         text-transform: capitalize;
+    }
+
+    a.logo{
+        display: block;
+        margin: auto;
     }
 
     .logo{
@@ -146,29 +151,22 @@ footer{
     display: none;
 
     .logo{
-        max-width: 100px;
+        max-width: 60px;
         border-radius: 50%;
+        display: inline;
     }
     
     ul{
-        list-style: none;
         margin-top: 16px;
         padding-left: 0px;
-        text-align: left;
-    }
-
-    li{
-        display: inline;
     }
 
     .count{
         color:#F84F38;
-        text-align: end;
         font-size: 16px;
     }
 
     a {
-        float: left;
         color: black;
         font-size: 16px;
         text-decoration: underline;
@@ -176,15 +174,18 @@ footer{
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1000px) {
     header {
       display: none;
     }
     .top-header{
-        display: none;
+        display: block;
     }
   }
 
-@media (min-width: 576) {
-
+a.button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
 }

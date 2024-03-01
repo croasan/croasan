@@ -1,15 +1,17 @@
 <div class="top-header">
-    <img class="logo" id="logo" src="/assets/img/logo.png" alt="Croasan">
-    <div class="tags">
-    <ul class="">
-        {% for tag in site.tags %}
-        {% capture tag_name %}{{ tag | first }}{% endcapture %}
-        <a href="" class="tag"><li class="">
+    <ul class="nav justify-content-start">
+        <li class="nav-item">
+            <a href="/">
+                <img class="logo" id="logo" src="/assets/img/logo.png" alt="Croasan">
+            </a>
+        </li>
+        {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <li class="nav-item mx-auto">
             <!-- <p class="count">{{ site.tags[tag_name].size }}</p> -->
-            <a href="" class="tag">{{ tag_name }}</a>
-            <p class="count">/ {{ site.tags[tag_name].size }}</p>
+            <a href="">{{ category_name }}</a>
+            <p class="count">/ {{ site.categories[category_name].size }}</p>
         </li>
         {% endfor %}
     </ul>
-    </div>
 </div>

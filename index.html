@@ -1,11 +1,15 @@
 ---
 layout: default
+pagination: 
+  enabled: true
 ---
 
 <!-- {% assign sorted = site.posts | sort: 'date' | reverse  %} -->
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <div class="row post">
     {{post.content}}
 </div>
 {% endfor %}
+
+{% include paginator_buttons.html %}

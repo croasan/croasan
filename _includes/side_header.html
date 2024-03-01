@@ -1,0 +1,17 @@
+<header>
+    <a href="/" class="logo">
+        <img class="logo" id="logo" src="/assets/img/logo.png" alt="Croasan">
+    </a>
+    <div class="tags">
+    <ul class="">
+        {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <li class="">
+            <!-- <p class="count">{{ site.tags[tag_name].size }}</p> -->
+            <a href="" class="tag">{{ category_name }}</a>
+            <p class="count">/ {{ site.categories[category_name].size }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    </div>
+</header>

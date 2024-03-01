@@ -11,21 +11,23 @@
     </head>
     <body>
         <section class="container-fluid p-0">
-            <div class="row">
+            <div class="row mb-5">
                 {% include top_header.html %}
             </div>
             <div class="row">
-            <div class="col-10 p-0">
+            <div id="main-content" class="col-10 p-0">
                 <section class="container-fluid p-0 posts">
                     {{ content }}
                 </section>
             </div>
             <div class="col-2 p-0 header">
-                {% include header.html %}
+                {% include side_header.html %}
             </div>
         </div>
+
         {% include footer.html %}
 
         </section>
+        <script src="/assets/js/responsive.js"></script>
     </body>
 </html>
