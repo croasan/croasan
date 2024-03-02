@@ -2,12 +2,13 @@
 ---
 
 @import url('https://fonts.googleapis.com/css?family=Domine:700');
-
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
 $background-color: #F7F0E9;
 $title-color: #F84F38;
-$title-font: Domine;
+$title-font: "Domine";
 $caption-color:#959791;
+
 
 $yellow: #FFB052;
 $blue: #00D0FA;
@@ -60,10 +61,27 @@ body{
     }
 
     h1{
+        font-family: $title-font;
         color: $title-color;
-        text-transform:uppercase;
         letter-spacing: -2px;
-        font-size: 32px;
+        font-size: 48px;
+        text-align: right;
+        display: inline;
+        vertical-align: bottom;
+        margin-left: 8px;
+    }
+}
+
+.tag_title{
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 16px;
+
+    h1{
+        color: $yellow;
+        letter-spacing: -2px;
+        font-size: 56px;
         text-align: right;
         display: inline;
         vertical-align: bottom;

@@ -9,7 +9,7 @@
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <li class="nav-item mx-auto">
             <!-- <p class="count">{{ site.tags[tag_name].size }}</p> -->
-            <a href="">{{ category_name }}</a>
+            <a href="/category/{{ category_name }}">{{ category_name }}</a>
             <p class="count">/ {{ site.categories[category_name].size }}</p>
         </li>
         {% endfor %}

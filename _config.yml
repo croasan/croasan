@@ -10,6 +10,18 @@ theme: minima
 plugins:
   - jekyll-paginate-v2
 
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
 # Pagination Settings
 pagination:
   enabled: true
