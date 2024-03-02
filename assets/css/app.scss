@@ -169,7 +169,7 @@ footer{
     display: none;
 
     .logo{
-        max-width: 60px;
+        max-width: 50px;
         border-radius: 50%;
         display: inline;
     }
@@ -181,12 +181,12 @@ footer{
 
     .count{
         color:#F84F38;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     a {
         color: black;
-        font-size: 16px;
+        font-size: 14px;
         text-decoration: underline;
         text-transform: capitalize;
     }
@@ -198,6 +198,24 @@ footer{
     }
     .top-header{
         display: block;
+    }
+    body{
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 16px;
+    }
+    .post{
+        margin-bottom: 64px;
+    }
+    .tag_title{
+        h1{
+            font-size: 40px;
+        }
+    }
+    .title_block{
+        h1{
+            font-size: 40px;
+        }
     }
   }
 
