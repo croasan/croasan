@@ -14,7 +14,7 @@ function setMainContentColumns(width){
     }
 }
 
-var width = window.matchMedia("(max-width: 1000px)")
+var width = window.matchMedia("(max-width: 960px)")
 
 setMainContentColumns(width)
 
